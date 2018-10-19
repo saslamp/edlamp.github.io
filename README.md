@@ -1,2 +1,2 @@
 # edlamp
-- Sumplying learning
+- Simplifying learning
