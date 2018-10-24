@@ -1,1 +1,212 @@
-<p>own your learning</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SLEd</title>
+    <link rel="icon" type="image/png" href="./assets/img/icon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./assets/devicons/css/devicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">    
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+    	<!--navigation -->
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container-fluid">
+
+			  <a class="navbar-brand" href="#" id="navbrand">
+                EdLamp
+                <i class="fa fa-laptop"></i>  
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span><i class="fa fa-bars"></i></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			      </li>
+				  <li class="nav-item">
+			        <a class="nav-link" href="mailto:saslamp@yahoo.com">Contact Us</a>
+                  </li>
+			      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Courses
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">HTML</a>
+                          <a class="dropdown-item" href="#">CSS</a>
+                          <a class="dropdown-item" href="#">JavaScipt</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Partner</a>
+                        </div>
+                      </li>
+			      <li class="nav-item">
+			        <a class="nav-link btn btn-danger" href="./pages/login.html">Login</a>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+		</nav><!--end nav-->
+    </header>
+    <main>
+        <div class="text-center" id="banner">
+            <h4 data-aos="fade-down">Simplifying Learning</h4>
+            <p data-aos="fade-up">An interactive approach to learning web technologies</p>
+        </div>
+
+        <div id="tag">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <span>
+                                <i class="fa fa-clock-o"></i>
+                                On your schedule
+                            </span>
+                            <span>
+                                <i class="fa fa-users"></i>
+                                Personalized guide
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container">
+                <h5 class="mt-5" data-aos="fade-right">Available Lesson</h5>
+                <hr width="50%" align="left" data-aos="fade-left">
+            </div>
+        </div>
+        
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="text-center">
+                            <h6 class="html-h">HTML & CSS Basic Course</h6>
+                            <p class="html-p">
+                                In <strong>2 short weeks</strong>
+                                you'll be guided to building your own personal portfolio, 
+                                and a beautiful project website using just HTML and CSS!
+                                <br/>
+                                <em>The fastest way to learn is to practice!</em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card text-center">
+                            <div>
+                                <i class="devicons devicons-html5"></i>
+                                <i class="devicons devicons-css3"></i>
+                            </div>
+                            <h6>Next Course Starts In:</h6>
+                            <p>Oct 29, 2018</p>
+                            <p id="timer" class="bg-success text-light"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="container">
+                <h5 class="mt-5" data-aos="fade-right">Upcoming Lessons</h5>
+                <hr width="50%" align="left" data-aos="fade-left">
+            </div> 
+
+            <section class="container">
+                <div class="row box-parent">
+                    <span class="col-sm-4 box">
+                        <p>
+                            Intro to JavaScipt
+                            <i class="devicons devicons-javascript"></i>
+                        </p>
+                    </span>
+
+                    <span class="col-sm-4 box">
+                        <p>
+                            Version control
+                            <i class="devicons devicons-git"></i>
+                        </p>
+                    </span>        
+                    <span class="col-sm-4 box">
+                        <p>
+                            Bootstrap
+                            <i class="devicons devicons-bootstrap"></i>
+                        </p>
+                    </span>
+                </div>
+        
+                <div class="row text-center box-parent">
+                    <span class="col-sm-4 box">
+                        <p>
+                            jQuery
+                            <i class="devicons devicons-jquery"></i>
+                        </p>
+                    </span>
+                    <span class="col-sm-4 box">
+                        <p>
+                            Intro to Angular
+                            <i class="devicons devicons-angular"></i>
+                        </p>
+                    </span>
+                    <span class="col-sm-4 box">
+                        <p>
+                            Intro to Ionic
+                            <i class="devicons devicons-ionic"></i>
+                        </p>
+                    </span>        
+                </div>     
+                
+                <div class="row text-center box-parent">
+                    <span class="col-sm-4 box">
+                        <p>
+                            Microsoft Office
+                            <i class="fa fa-file-excel-o"></i>
+                            <i class="fa fa-file-word-o"></i>
+                            <i class="fa fa-file-powerpoint-o"></i>
+                        </p>
+                    </span>
+                </div>
+            </section>
+        </div>
+
+        
+
+        <section style="border-top:1px solid #ccc;background:#fff" class="mt-3">
+            <div class="row"></div>
+        </section>
+
+</main>
+
+    <footer class="footer">
+        <div class="footer-copyright text-center py-3">
+            <div>
+                Connect:
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+            </div>
+
+            <div>&copy; 2018 SasLamp</div>
+        </div>    
+    </footer>
+
+    <script src="./assets/bootstrap/js/jquery.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>    
+
+</body>
+</html>
