@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SLEd</title>
+    <link rel="icon" type="image/png" href="./assets/img/icon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../assets/devicons/css/devicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">    
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <script src="../main.js"></script>
+
+    <style>
+        body {
+            /* background: linear-gradient(to right, #334d50, #cbcaa5); */
+            /* background: linear-gradient(to right, #f7f8f8, #acbb78); */
+            background: linear-gradient(to right, #c6ffdd, #fbd786);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .row {
+            position: absolute;
+            width: 85%;
+            top: 30%;
+        }
+        .devicons {
+            font-size: 50px;
+        }
+        .row * {
+            height: 185px;
+        }
+        .footerbar {
+            all: unset;
+        }
+        hr {
+            padding: 0;
+            margin: 0;
+        }
+        #disabled {
+            background-color: #c0c0c0;
+        }
+        @media screen and (max-width: 767px) {
+            body {
+                padding-left: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    	<!--navigation -->
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container-fluid">
+
+			  <a class="navbar-brand" href="#" id="navbrand">
+                EdLamp 
+                <i class="fa fa-laptop"></i>  
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span><i class="fa fa-bars"></i></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+			      </li>
+				  <li class="nav-item">
+			        <a class="nav-link" href="mailto:saslamp@yahoo.com">Contact Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Profile
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" class="pr-3" id="disabled"><i class="fa fa-pencil"></i> Lessons</a>
+                            <a class="dropdown-item" href="../index.html"><i class="fa fa-sign-out"></i> Logout</a>
+                        </div>
+                    </li>                  
+			    </ul>
+			  </div>
+			</div>
+		</nav><!--end nav-->
+    </header>
+   
+    <main>
+        <div class="container">
+            <div class="text-right pt-3" data-aos="fade-right">
+                <h5 class="text-dark">Hello {{user.name}}</h5>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card text-center">
+                        <h5 class="mt-1">Current Track</h5>
+                        <hr>
+                        <p>HTML & CSS Crash</p>
+                        <div>
+                            <i class="devicons devicons-html5"></i>
+                            <i class="devicons devicons-css3"></i>
+                        </div>
+                        <a class="btn btn-light text-danger" style="cursor:wait" data-toggle="modal" data-target="#myModal">Go to lesson &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-8">
+                    <div class="card">
+                        <h5 class="mt-1 pl-3">Completed Lessons</h5>
+                        <hr>
+                        <div>
+                            <p class="pl-3"><em>You do not have any completed lessons</em></p>                            
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+           
+
+        </div>
+    </main>
+
+    <footer class="footer fixed-bottom">
+        <div class="footer-copyright text-center py-3">
+            <div>
+                Connect:
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+            </div>
+
+            <div>&copy; 2018 SasLamp</div>
+        </div>    
+    </footer>
+    
+
+    <script src="../assets/bootstrap/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>    
+
+</body>
+</html>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title text-danger">HTML & CSS Basic</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Lesson is yet to start
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        section.lesson_html {
+            display: flex;  /*enables flex content for its children*/
+            box-sizing: border-box;
+        }
+
+        .lesson_html .column {
+            height: 100vh;  /*allows both columns to span the full height of the browser window*/
+            display: flex;
+            flex-direction: column;  /*places the left and right headers above the bottom content*/
+        }
+
+        .lesson_html #left {
+            flex-shrink: 0;  /*makes sure that content is not cut off in a smaller browser window*/
+            background: #fff;
+            border-right: 1px solid #dadada;
+            font-size: 12px;
+            width: 110px;
+            background: tomato;
+        }
+
+        .lesson_html #right {
+            width: 100vw;
+        }
+
+        .lesson_html .top-left {
+            flex-shrink: 0;
+            min-height: 50px;
+        }
+
+        .lesson_html .top-right {
+            flex-shrink: 0;
+            display: inline-flex;
+            min-height: 50px;
+        }
+
+        .lesson_html ul {
+            display: inline-flex;
+            list-style: none;
+        }
+
+        .lesson_html .bottom {
+            border-top: 1px solid #6969;
+            flex-grow: 1;  /*ensures that the container will take up the full height of the parent container*/
+            overflow-y: auto;  /*adds scroll to this container*/
+        }
+        .bottom .course-list {
+            display: initial;
+            list-style: initial;
+            font-size: larger;
+            text-align: center;
+        }
+        .course-list li {
+            padding: 1em 0;
+            border-bottom: 1px solid #aaa;
+            cursor: pointer;
+        }
+        .course-list li:hover {
+            background: #eb5757;
+        }
+        .cardsect {
+            background: #fff;
+            margin: 0 5%;
+            margin-top: 2%;
+            border: 2px solid black;
+        }
+        .codebox {
+            background: #f7f7f7;
+            padding: 5px;
+            display: block;
+            border: 1px solid lightgray;
+            color: #4f4f4f;
+        }
+    </style>
+</head>
+<body>
+    <section class="lesson_html">
+
+        <div id="left" class="column">
+            <div class="top-left">
+                <div class="card">
+                    <h2 class="text-danger">
+                        LampX
+                    </h2>
+                </div>
+            </div>
+            <div class="bottom">
+                <ul class="course-list">
+                    <li>Introduction</li>
+                    <li>Getting ready</li>
+                    <li>Basic Tags</li>
+                    <li>Media</li>
+                    <li>Forms</li>
+                    <li>Tables</li>
+                    <li>Intro to CSS</li>
+                    <li>Exercise</li>
+                    <li>Recap</li>
+                    <li>Business Site</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="right" class="column">
+        
+            <div class="top-right">
+                <span>icon</span>
+                <span>icon2</span>
+                <span>icon3</span>
+            </div>
+        
+            <div class="bottom">
+                <div class="cardsect text-center">
+                    <h4>An Introduction</h4>
+                </div>
+            </div>
+        
+        </div>
+    
+    </section>
+</body>
+</html>
